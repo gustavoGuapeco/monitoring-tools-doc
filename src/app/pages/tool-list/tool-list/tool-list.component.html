@@ -1,1 +1,7 @@
-<p>tool-list works!</p>
+<div id="metrics-container">
+    <div id="metrics">
+        <mat-accordion>
+            <app-tool-panel *ngFor="let tool of tools" [tool]="tool"></app-tool-panel>
+        </mat-accordion>
+    </div>
+</div>
