@@ -8,9 +8,13 @@
     <p><strong>Descrição:</strong> {{ tool.description }}</p>
     <p><strong>Quando usar:</strong> {{ tool.useCases }}</p>
     <p><strong>Exemplo:</strong> {{ tool.example }}</p>
-    <p><strong>Link:</strong>
-        <a [href]="tool.link" target="_blank" rel="noopener noreferrer">
-            {{ tool.link }}
-        </a>
-    </p>
+
+    <p><strong>Links:</strong></p>
+
+    @for (item of tool.links; track item.name; let i = $index) {
+    <a [href]="item.link" target="_blank" rel="noopener noreferrer">
+        {{ item.name }}
+    </a>
+    }
+
 </mat-expansion-panel>
