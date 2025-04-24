@@ -25,6 +25,7 @@ p {
     font-size: 0.95rem;
     color: #eee;
     line-height: 1.5;
+    text-align: start;
 }
 
 strong {
@@ -32,11 +33,14 @@ strong {
 }
 
 a {
-    color: #add8ff;
-    text-decoration: underline;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: start;
+    display: block;
+    cursor: pointer;
 }
 
 a:hover {
-    color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
